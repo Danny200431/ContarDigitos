@@ -1,0 +1,21 @@
+Algoritmo ContarDigitos
+    Escribir "Introduce un número: "
+    Leer numero
+	
+    Si numero < 0 entonces
+        numero = numero * (-1)  // Convertir el número a positivo
+    FinSi
+	
+    contador = 0
+	
+    Si numero = 0 entonces
+        contador = 1  // El número 0 tiene 1 dígito
+    Sino
+        Mientras numero >= 1 hacer
+            numero = numero / 10
+            contador = contador + 1
+        FinMientras
+    FinSi
+	
+    Escribir "El número tiene ", contador, " dígitos."
+FinAlgoritmo
